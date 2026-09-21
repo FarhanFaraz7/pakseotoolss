@@ -1,0 +1,75 @@
+
+
+
+{
+  "site": "PakSEOToolss.com",
+  "domain": "https://pakseotoolss.com",
+  "total_tools": 35,
+  "categories": [
+    {
+      "name": "Keyword Research",
+      "count": 7,
+      "tools": [
+        {"id": 1, "name": "Generate 20 Keywords"},
+        {"id": 2, "name": "Long-Tail Finder"},
+        {"id": 3, "name": "Difficulty Checker"},
+        {"id": 4, "name": "Intent Checker"},
+        {"id": 5, "name": "Volume Estimator"},
+        {"id": 6, "name": "Global Language Converter (100+ Languages)"},
+        {"id": 7, "name": "Keyword to Title Generator"}
+      ]
+    },
+    {
+      "name": "Competitor Analysis",
+      "count": 7,
+      "tools": [
+        {"id": 8, "name": "DA Checker"},
+        {"id": 9, "name": "PA Checker"},
+        {"id": 10, "name": "Spam Score Checker"},
+        {"id": 11, "name": "Backlink Counter"},
+        {"id": 12, "name": "Referring Domains"},
+        {"id": 13, "name": "Weak Point Finder"},
+        {"id": 14, "name": "Top Keywords Finder"}
+      ]
+    },
+    {
+      "name": "Website Audit",
+      "count": 7,
+      "tools": [
+        {"id": 15, "name": "SEO Score Checker"},
+        {"id": 16, "name": "Title Checker"},
+        {"id": 17, "name": "Meta Description Checker"},
+        {"id": 18, "name": "H1/H2/H3 Counter"},
+        {"id": 19, "name": "Word Count & Readability"},
+        {"id": 20, "name": "Image Alt Checker"},
+        {"id": 21, "name": "Broken Link Finder"}
+      ]
+    },
+    {
+      "name": "Content SEO",
+      "count": 7,
+      "tools": [
+        {"id": 22, "name": "Word Counter"},
+        {"id": 23, "name": "Char Counter"},
+        {"id": 24, "name": "Plagiarism Checker"},
+        {"id": 25, "name": "AI Detector"},
+        {"id": 26, "name": "Grammar Checker"},
+        {"id": 27, "name": "Keyword Density Checker"},
+        {"id": 28, "name": "Meta Tag Generator"}
+      ]
+    },
+    {
+      "name": "YouTube Tools",
+      "count": 7,
+      "tools": [
+        {"id": 29, "name": "Thumbnail Downloader"},
+        {"id": 30, "name": "Title Generator"},
+        {"id": 31, "name": "Description Generator"},
+        {"id": 32, "name": "Tags Generator"},
+        {"id": 33, "name": "Hashtag Generator"},
+        {"id": 34, "name": "Channel ID Finder"},
+        {"id": 35, "name": "Video SEO Score Checker"}
+      ]
+    }
+  ]
+}
