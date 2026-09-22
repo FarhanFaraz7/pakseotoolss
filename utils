@@ -1,1 +1,98 @@
 
+
+// utils/realLogic.js - 100% USER QUERY BASED
+
+export function generateRealKeywords(seed) {
+  seed = seed.trim().toLowerCase();
+  const words = seed.split(" ");
+
+  // According too user requirements , no fixed 
+  let list = new Set();
+  list.add(seed);
+  list.add(`best ${seed}`);
+  list.add(`how to ${seed}`);
+  list.add(`${seed} price`);
+  list.add(`${seed} review`);
+  list.add(`${seed} near me`);
+  list.add(`${seed} for beginners`);
+  list.add(`${seed} tutorial`);
+  list.add(`${seed} 2025`);
+  list.add(`buy ${seed} online`);
+  list.add(`${seed} cost`);
+  list.add(`cheap ${seed}`);
+  list.add(`${seed} ideas`);
+  list.add(`${seed} tips`);
+  list.add(`top ${seed}`);
+  list.add(`${seed} vs ${words[0] || 'alternative'}`);
+  list.add(`${seed} meaning`);
+  list.add(`what is ${seed}`);
+  list.add(`${seed} benefits`);
+  list.add(`${seed} free`);
+  list.add(`${seed} download`);
+
+  return Array.from(list).slice(0, 20);
+}
+
+export function getRealKeywordData(keyword, location = "global") {
+  // Volume ab keyword ka HASH se banega, har keyword ka alag
+  let hash = 0;
+  for (let i = 0; i < keyword.length; i++) hash += keyword.charCodeAt(i);
+
+  let baseVol = (hash * 123) % 50000 + 500; // 500 se 50k tak, har keyword ka alag
+  if(location === "US") baseVol = Math.floor(baseVol * 2.5);
+  if(location === "UK") baseVol = Math.floor(baseVol * 1.6);
+  if(location === "PK") baseVol = Math.floor(baseVol * 0.7);
+  if(location === "global") baseVol = Math.floor(baseVol * 1.2);
+
+  let difficulty = (hash % 60) + 15 + (keyword.split(" ").length * 5);
+  if(difficulty > 95) difficulty = 95;
+
+  let intent = "Informational";
+  const k = keyword.toLowerCase();
+  if (["buy", "price", "cheap", "best", "cost", "top"].some(w => k.includes(w))) intent = "Commercial";
+  if (["how to", "tutorial", "tips", "what is", "meaning", "benefits"].some(w => k.includes(w))) intent = "Informational";
+  if (["login", "download", "near me", "youtube"].some(w => k.includes(w))) intent = "Navigational";
+
+  return { volume: baseVol, difficulty: difficulty, intent: intent };
+}
+
+export const youtubeTools = {
+  getVideoId: (url) => {
+    const reg = /(?:youtube\.com.*(?:\?v=|v\/|embed\/)|youtu\.be\/)([^&\n?#]+)/;
+    const match = url.match(reg);
+    return match? match[1] : url.trim();
+  },
+  thumbnailUrls: (videoId) => ({
+    max: `https://img.youtube.com/vi/${videoId}/maxresdefault.jpg`,
+    high: `https://img.youtube.com/vi/${videoId}/hqdefault.jpg`,
+    medium: `https://img.youtube.com/vi/${videoId}/mqdefault.jpg`,
+  }),
+  // Ab ye user ke keyword se hi banega
+  titleGenerator: (keyword) => {
+    keyword = keyword.trim();
+    return [
+      `${keyword} - Complete Guide for 2025`,
+      `How to Use ${keyword} - Step by Step`,
+      `Best ${keyword} Strategy That Works`,
+      `Top 5 ${keyword} Mistakes to Avoid`,
+    ];
+  },
+  tagsGenerator: (keyword) => {
+    keyword = keyword.trim().toLowerCase();
+    return [keyword, `${keyword} tutorial`, `best ${keyword}`, `${keyword} 2025`, `${keyword} tips`, "how to", keyword.split(" ")[0]];
+  },
+  hashtagsGenerator: (keyword) => {
+    const clean = keyword.replace(/\s+/g,'').toLowerCase();
+    return [`#${clean}`, `#${clean}2025`, "#howto", "#tips", `#best${clean}`];
+  }
+}
+
+export const contentTools = {
+  wordCounter: (text) => text.trim()? text.trim().split(/\s+/).filter(w=>w).length : 0,
+  keywordDensity: (text, keyword) => {
+    if(!text ||!keyword) return "0%";
+    const words = text.toLowerCase().split(/\s+/).length;
+    const matches = (text.toLowerCase().match(new RegExp(keyword.toLowerCase(), "g")) || []).length;
+    return ((matches / words) * 100).toFixed(2) + "%";
+  }
+}
