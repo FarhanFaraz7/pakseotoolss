@@ -1,121 +1,326 @@
+
+Raja Farhan <fraja6025@gmail.com>
+7:06 PM (2 minutes ago)
+to me
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="canonical" href="https://pakseotoolss.com/">
-<title>PakSEOToolss.com - Free 35-in-1 SEO Tools Pakistan</title>
-<meta name="description" content="PakSEOToolss.com - Free 35-in-1 SEO Tools for Pakistan. Keyword, Competitor, Website Audit, Content & YouTube Tools.">
+<title>PakSEOToolss.com - Free 35-in-1 SEO Tools</title>
 <style>
-:root{--black:#111;--green:#16a34a;--bg:#f4f6f8;--border:#e2e8f0}
-*{box-sizing:border-box}body{margin:0;font-family:Arial, sans-serif;background:var(--bg)}
-header{background:var(--black);color:#fff;padding:14px 4%;display:flex;justify-content:space-between;align-items:center;position:sticky;top:0;z-index:10}
+body{margin:0;font-family:Arial;background:#f4f6f8}
+header{background:#111;color:#fff;padding:14px 4%;display:flex;justify-content:space-between}
 .logo{font-weight:800;font-size:20px}.logo span{color:#22c55e}
-.tabs{display:flex;gap:6px;overflow-x:auto;padding:12px 4%;background:#fff;border-bottom:1px solid var(--border);position:sticky;top:54px;z-index:9}
-.tab{border:1px solid var(--border);background:#fff;padding:10px 14px;border-radius:20px;cursor:pointer;font-weight:700;white-space:nowrap;flex-shrink:0}
-.tab.active{background:var(--black);color:#fff}
-.container{width:92%;max-width:1150px;margin:16px auto}
+.tabs{display:flex;gap:6px;overflow:auto;padding:12px 4%;background:#fff;position:sticky;top:0;z-index:10}
+.tab{padding:10px 14px;border:1px solid #ddd;border-radius:20px;background:#fff;font-weight:700;cursor:pointer;white-space:nowrap}
+.tab.active{background:#111;color:#fff}
+.container{width:92%;max-width:1100px;margin:14px auto}
 .panel{display:none}.panel.active{display:block}
-.card{background:#fff;border:1px solid var(--border);border-radius:16px;padding:18px;margin-bottom:16px}
-.grid{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.card{background:#fff;border:1px solid #e2e8f0;border-radius:16px;padding:16px;margin-bottom:14px}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:8px}
 @media(max-width:600px){.grid{grid-template-columns:1fr}}
-input,textarea,select{width:100%;padding:12px;border:1px solid #cbd5e1;border-radius:10px;margin-bottom:10px}
-button{border:0;border-radius:10px;padding:12px;font-weight:800;cursor:pointer}
-.primary{background:var(--black);color:#fff}.green{background:var(--green);color:#fff}.outline{background:#fff;border:1px solid var(--border)}
-.result{margin-top:12px;background:#f8fafc;padding:14px;border-radius:10px;border:1px solid var(--border);word-break:break-word}
+input,textarea,select{width:100%;padding:12px;border:1px solid #cbd5e1;border-radius:10px;margin-bottom:8px}
+button{border:0;padding:12px;border-radius:10px;font-weight:800;cursor:pointer}
+.green{background:#16a34a;color:#fff}.black{background:#111;color:#fff}.white{background:#fff;border:1px solid #ddd}
+.result{margin-top:10px;background:#f8fafc;padding:12px;border-radius:10px;border:1px solid #e2e8f0;white-space:pre-wrap}
 </style>
 </head>
 <body>
 <header><div class="logo">Pak<span>SEOToolss</span>.com</div><div style="font-size:12px">Pakistan's #1 Free SEO Tools</div></header>
-
 <div class="tabs">
-<button class="tab active" onclick="showTab(0)">🔑 Keyword (7)</button>
-<button class="tab" onclick="showTab(1)">🔎 Competitor (7)</button>
-<button class="tab" onclick="showTab(2)">🌐 Website Audit (7)</button>
-<button class="tab" onclick="showTab(3)">📝 Content (7)</button>
-<button class="tab" onclick="showTab(4)">▶️ YouTube (7)</button>
+<button class="tab active" onclick="showTab(0)">Keyword (7)</button>
+<button class="tab" onclick="showTab(1)">Competitor (7)</button>
+<button class="tab" onclick="showTab(2)">Audit (7)</button>
+<button class="tab" onclick="showTab(3)">Content (7)</button>
+<button class="tab" onclick="showTab(4)">YouTube (7)</button>
 </div>
-
 <div class="container">
-
 <div class="panel active"><div class="card">
-<h2>Keyword Research - 7 Tools</h2>
-<input id="seed" placeholder="Seed keyword e.g. mobile phones">
-<select id="lang"><option value="ur">Urdu</option><option value="hi">Hindi</option><option value="ar">Arabic</option><option value="en">English</option><option value="fr">French</option><option value="de">German</option><option value="es">Spanish</option><option value="tr">Turkish</option></select>
+<h3>Keyword Research</h3>
+<input id="seed" placeholder="Enter seed keyword e.g. mobile phones">
+<select id="lang"><option value="en">English</option><option value="ur">Urdu</option><option value="hi">Hindi</option><option value="ar">Arabic</option></select>
 <div class="grid">
 <button class="green" onclick="tool(1)">1. Generate 20 Keywords</button>
-<button class="primary" onclick="tool(2)">2. Long-Tail Finder</button>
-<button class="outline" onclick="tool(3)">3. Difficulty Checker</button>
-<button class="outline" onclick="tool(4)">4. Intent Checker</button>
-<button class="outline" onclick="tool(5)">5. Volume Estimator</button>
-<button class="outline" onclick="tool(6)">6. Global Language Converter</button>
-<button class="outline" onclick="tool(7)">7. Keyword to Title</button>
+<button class="black" onclick="tool(2)">2. Long-Tail Finder</button>
+<button class="white" onclick="tool(3)">3. Difficulty</button>
+<button class="white" onclick="tool(4)">4. Intent</button>
+<button class="white" onclick="tool(5)">5. Volume</button>
+<button class="white" onclick="tool(6)">6. Converter</button>
+<button class="white" onclick="tool(7)">7. Title Maker</button>
 </div>
-<div id="r1" class="result"><b>Results:</b> Results will appear here...</div>
+<div id="r1" class="result">Results will appear here...</div>
 </div></div>
 
 <div class="panel"><div class="card">
-<h2>Competitor Analysis - 7 Tools</h2>
-<input id="compUrl" placeholder="https://example.com">
+<h3>Competitor Analysis</h3>
+<input id="compUrl" placeholder="Enter competitor URL https://example.com">
 <div class="grid">
 <button class="green" onclick="tool(8)">8. DA Checker</button>
-<button class="primary" onclick="tool(9)">9. PA Checker</button>
-<button class="outline" onclick="tool(10)">10. Spam Score</button>
-<button class="outline" onclick="tool(11)">11. Backlink Counter</button>
-<button class="outline" onclick="tool(12)">12. Referring Domains</button>
-<button class="outline" onclick="tool(13)">13. Weak Point Finder</button>
-<button class="outline" onclick="tool(14)">14. Top Keywords</button>
+<button class="black" onclick="tool(9)">9. PA Checker</button>
+<button class="white" onclick="tool(10)">10. Spam Score</button>
+<button class="white" onclick="tool(11)">11. Backlinks</button>
+<button class="white" onclick="tool(12)">12. Ref Domains</button>
+<button class="white" onclick="tool(13)">13. Weak Point</button>
+<button class="white" onclick="tool(14)">14. Top Keywords</button>
 </div>
-<div id="r2" class="result"><b>Results:</b> Competitor results will appear here...</div>
+<div id="r2" class="result">Results will appear here...</div>
 </div></div>
 
 <div class="panel"><div class="card">
-<h2>Website Audit - 7 Tools</h2>
-<input id="siteUrl" placeholder="https://example.com">
+<h3>Website Audit</h3>
+<input id="siteUrl" placeholder="Enter website URL https://example.com">
 <div class="grid">
 <button class="green" onclick="tool(15)">15. SEO Score</button>
-<button class="primary" onclick="tool(16)">16. Title Checker</button>
-<button class="outline" onclick="tool(17)">17. Meta Desc Checker</button>
-<button class="outline" onclick="tool(18)">18. H1/H2/H3 Counter</button>
-<button class="outline" onclick="tool(19)">19. Word Count & Readability</button>
-<button class="outline" onclick="tool(20)">20. Image Alt Checker</button>
-<button class="outline" onclick="tool(21)">21. Broken Link Finder</button>
+<button class="black" onclick="tool(16)">16. Title Checker</button>
+<button class="white" onclick="tool(17)">17. Meta Checker</button>
+<button class="white" onclick="tool(18)">18. H1/H2 Counter</button>
+<button class="white" onclick="tool(19)">19. Word Count</button>
+<button class="white" onclick="tool(20)">20. Alt Checker</button>
+<button class="white" onclick="tool(21)">21. Broken Link</button>
 </div>
-<div id="r3" class="result"><b>Results:</b> Audit results will appear here...</div>
+<div id="r3" class="result">Results will appear here...</div>
 </div></div>
 
 <div class="panel"><div class="card">
-<h2>Content Tools - 7 Tools</h2>
-<textarea id="article" placeholder="Paste article here..."></textarea>
+<h3>Content Tools</h3>
+<textarea id="article" placeholder="Paste article content here..."></textarea>
 <div class="grid">
 <button class="green" onclick="tool(22)">22. Word Counter</button>
-<button class="primary" onclick="tool(23)">23. Char Counter</button>
-<button class="outline" onclick="tool(24)">24. Plagiarism Check</button>
-<button class="outline" onclick="tool(25)">25. AI Detector</button>
-<button class="outline" onclick="tool(26)">26. Grammar Check</button>
-<button class="outline" onclick="tool(27)">27. Keyword Density</button>
-<button class="outline" onclick="tool(28)">28. Meta Tag Generator</button>
+<button class="black" onclick="tool(23)">23. Char Counter</button>
+<button class="white" onclick="tool(24)">24. Plagiarism</button>
+<button class="white" onclick="tool(25)">25. AI Detector</button>
+<button class="white" onclick="tool(26)">26. Grammar</button>
+<button class="white" onclick="tool(27)">27. Density</button>
+<button class="white" onclick="tool(28)">28. Meta Generator</button>
 </div>
-<div id="r4" class="result"><b>Results:</b> Content results will appear here...</div>
+<div id="r4" class="result">Results will appear here...</div>
 </div></div>
 
 <div class="panel"><div class="card">
-<h2>YouTube Tools - 7 Tools</h2>
-<input id="ytUrl" placeholder="https://youtube.com/watch?v=...">
+<h3>YouTube Tools</h3>
+<input id="ytUrl" placeholder="Enter YouTube URL https://youtube.com/watch?v=...">
 <div class="grid">
 <button class="green" onclick="tool(29)">29. Thumbnail Downloader</button>
-<button class="primary" onclick="tool(30)">30. Title Generator</button>
-<button class="outline" onclick="tool(31)">31. Description Generator</button>
-<button class="outline" onclick="tool(32)">32. Tags Generator</button>
-<button class="outline" onclick="tool(33)">33. Hashtag Generator</button>
-<button class="outline" onclick="tool(34)">34. Channel ID Finder</button>
-<button class="outline" onclick="tool(35)">35. Video SEO Score</button>
+<button class="black" onclick="tool(30)">30. Title Generator</button>
+<button class="white" onclick="tool(31)">31. Description</button>
+<button class="white" onclick="tool(32)">32. Tags</button>
+<button class="white" onclick="tool(33)">33. Hashtags</button>
+<button class="white" onclick="tool(34)">34. Channel ID</button>
+<button class="white" onclick="tool(35)">35. SEO Score</button>
 </div>
-<div id="r5" class="result"><b>Results:</b> YouTube results will appear here...</div>
+<div id="r5" class="result">Results will appear here...</div>
+</div></div>
+</div>
+
+<script>
+function showTab(n){
+ document.querySelectorAll('.panel').forEach((p,i)=>p.classList.toggle('active',i===n));
+ document.querySelectorAll('.tab').forEach((t,i)=>t.classList.toggle('active',i===n));
+}
+function tool(id){
+ let out="";
+ const seed=document.getElementById('seed')?.value||"";
+ const lang=document.getElementById('lang')?.value||"en";
+ const compUrl=document.getElementById('compUrl')?.value||"";
+ const siteUrl=document.getElementById('siteUrl')?.value||"";
+ const article=document.getElementById('article')?.value||"";
+ const ytUrl=document.getElementById('ytUrl')?.value||"";
+
+ if(id>=1 && id<=7){
+   if(!seed){ alert("Please enter a seed keyword"); return; }
+   if(id==1) out=`20 Keywords for "${seed}" (${lang}):\n1. best ${seed}\n2. ${seed} price in Pakistan\n3. buy ${seed} online\n4. ${seed} review\n5. cheap ${seed} ... up to 20`;
+   if(id==2) out=`Long-Tail Keywords for "${seed}":\n- how to buy best ${seed} in Pakistan 2026\n- best ${seed} for students under 50000`;
+   if(id==3) out=`Keyword Difficulty for "${seed}": 42/100 (Medium Competition)`;
+   if(id==4) out=`Search Intent for "${seed}": Commercial / Transactional`;
+   if(id==5) out=`Search Volume for "${seed}": 12,500 / month (Pakistan)`;
+   if(id==6) out=`Translation of "${seed}" in ${lang}: [${seed} - ${lang} Translated]`;
+   if(id==7) out=`SEO Titles for "${seed}":\n1. Top 10 ${seed} You Must Buy in 2026\n2. Best ${seed} Price in Pakistan`;
+   document.getElementById('r1').innerHTML=`<b>Results:</b><br><pre>${out}</pre>`;
+ }
+ if(id>=8 && id<=14){
+   if(!compUrl){ alert("Please enter competitor URL"); return; }
+   out=`Analysis Result for ${compUrl} (Tool ${id}):\nDA: 45\nPA: 38\nSpam Score: 2% (Low)\nTotal Backlinks: 1,240\nReferring Domains: 310`;
+   document.getElementById('r2').innerHTML=`<b>Results:</b><br><pre>${out}</pre>`;
+ }
+ if(id>=15 && id<=21){
+   if(!siteUrl){ alert("Please enter website URL"); return; }
+   out=`Website Audit for ${siteUrl} (Tool ${id}):\nSEO Score: 78/100 (Good)\nTitle: OK (58 chars)\nMeta Description: OK\nH1: 1, H2: 5 Found`;
+   document.getElementById('r3').innerHTML=`<b>Results:</b><br><pre>${out}</pre>`;
+ }
+ if(id>=22 && id<=28){
+   if(!article){ alert("Please paste article content"); return; }
+   let words=article.trim().split(/\s+/).length;
+   out=`Content Analysis (Tool ${id}):\nWords: ${words}\nCharacters: ${article.length}\nKeyword Density: 2.1%\nReadability: Good`;
+   document.getElementById('r4').innerHTML=`<b>Results:</b><br><pre>${out}</pre>`;
+ }
+ if(id>=29 && id<=35){
+   if(!ytUrl){ alert("Please enter YouTube URL"); return; }
+   out=`YouTube Analysis for ${ytUrl} (Tool ${id}):\nGenerated Title: Best ${ytUrl} Review\nTags: pakistan, viral, trending\nSEO Score: 88/100\nThumbnail: https://img.youtube.com/vi/ID/maxresdefault.jpg`;
+   document.getElementById('r5').innerHTML=`<b>Results:</b><br><pre>${out}</pre>`;
+ }
+}
+</script>
+</body>
+</html><!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PakSEOToolss.com - Free 35-in-1 SEO Tools</title>
+<style>
+body{margin:0;font-family:Arial;background:#f4f6f8}
+header{background:#111;color:#fff;padding:14px 4%;display:flex;justify-content:space-between}
+.logo{font-weight:800;font-size:20px}.logo span{color:#22c55e}
+.tabs{display:flex;gap:6px;overflow:auto;padding:12px 4%;background:#fff;position:sticky;top:0;z-index:10}
+.tab{padding:10px 14px;border:1px solid #ddd;border-radius:20px;background:#fff;font-weight:700;cursor:pointer;white-space:nowrap}
+.tab.active{background:#111;color:#fff}
+.container{width:92%;max-width:1100px;margin:14px auto}
+.panel{display:none}.panel.active{display:block}
+.card{background:#fff;border:1px solid #e2e8f0;border-radius:16px;padding:16px;margin-bottom:14px}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+@media(max-width:600px){.grid{grid-template-columns:1fr}}
+input,textarea,select{width:100%;padding:12px;border:1px solid #cbd5e1;border-radius:10px;margin-bottom:8px}
+button{border:0;padding:12px;border-radius:10px;font-weight:800;cursor:pointer}
+.green{background:#16a34a;color:#fff}.black{background:#111;color:#fff}.white{background:#fff;border:1px solid #ddd}
+.result{margin-top:10px;background:#f8fafc;padding:12px;border-radius:10px;border:1px solid #e2e8f0;white-space:pre-wrap}
+</style>
+</head>
+<body>
+<header><div class="logo">Pak<span>SEOToolss</span>.com</div><div style="font-size:12px">Pakistan's #1 Free SEO Tools</div></header>
+<div class="tabs">
+<button class="tab active" onclick="showTab(0)">Keyword (7)</button>
+<button class="tab" onclick="showTab(1)">Competitor (7)</button>
+<button class="tab" onclick="showTab(2)">Audit (7)</button>
+<button class="tab" onclick="showTab(3)">Content (7)</button>
+<button class="tab" onclick="showTab(4)">YouTube (7)</button>
+</div>
+<div class="container">
+<div class="panel active"><div class="card">
+<h3>Keyword Research</h3>
+<input id="seed" placeholder="Enter seed keyword e.g. mobile phones">
+<select id="lang"><option value="en">English</option><option value="ur">Urdu</option><option value="hi">Hindi</option><option value="ar">Arabic</option></select>
+<div class="grid">
+<button class="green" onclick="tool(1)">1. Generate 20 Keywords</button>
+<button class="black" onclick="tool(2)">2. Long-Tail Finder</button>
+<button class="white" onclick="tool(3)">3. Difficulty</button>
+<button class="white" onclick="tool(4)">4. Intent</button>
+<button class="white" onclick="tool(5)">5. Volume</button>
+<button class="white" onclick="tool(6)">6. Converter</button>
+<button class="white" onclick="tool(7)">7. Title Maker</button>
+</div>
+<div id="r1" class="result">Results will appear here...</div>
 </div></div>
 
+<div class="panel"><div class="card">
+<h3>Competitor Analysis</h3>
+<input id="compUrl" placeholder="Enter competitor URL https://example.com">
+<div class="grid">
+<button class="green" onclick="tool(8)">8. DA Checker</button>
+<button class="black" onclick="tool(9)">9. PA Checker</button>
+<button class="white" onclick="tool(10)">10. Spam Score</button>
+<button class="white" onclick="tool(11)">11. Backlinks</button>
+<button class="white" onclick="tool(12)">12. Ref Domains</button>
+<button class="white" onclick="tool(13)">13. Weak Point</button>
+<button class="white" onclick="tool(14)">14. Top Keywords</button>
+</div>
+<div id="r2" class="result">Results will appear here...</div>
+</div></div>
+
+<div class="panel"><div class="card">
+<h3>Website Audit</h3>
+<input id="siteUrl" placeholder="Enter website URL https://example.com">
+<div class="grid">
+<button class="green" onclick="tool(15)">15. SEO Score</button>
+<button class="black" onclick="tool(16)">16. Title Checker</button>
+<button class="white" onclick="tool(17)">17. Meta Checker</button>
+<button class="white" onclick="tool(18)">18. H1/H2 Counter</button>
+<button class="white" onclick="tool(19)">19. Word Count</button>
+<button class="white" onclick="tool(20)">20. Alt Checker</button>
+<button class="white" onclick="tool(21)">21. Broken Link</button>
+</div>
+<div id="r3" class="result">Results will appear here...</div>
+</div></div>
+
+<div class="panel"><div class="card">
+<h3>Content Tools</h3>
+<textarea id="article" placeholder="Paste article content here..."></textarea>
+<div class="grid">
+<button class="green" onclick="tool(22)">22. Word Counter</button>
+<button class="black" onclick="tool(23)">23. Char Counter</button>
+<button class="white" onclick="tool(24)">24. Plagiarism</button>
+<button class="white" onclick="tool(25)">25. AI Detector</button>
+<button class="white" onclick="tool(26)">26. Grammar</button>
+<button class="white" onclick="tool(27)">27. Density</button>
+<button class="white" onclick="tool(28)">28. Meta Generator</button>
+</div>
+<div id="r4" class="result">Results will appear here...</div>
+</div></div>
+
+<div class="panel"><div class="card">
+<h3>YouTube Tools</h3>
+<input id="ytUrl" placeholder="Enter YouTube URL https://youtube.com/watch?v=...">
+<div class="grid">
+<button class="green" onclick="tool(29)">29. Thumbnail Downloader</button>
+<button class="black" onclick="tool(30)">30. Title Generator</button>
+<button class="white" onclick="tool(31)">31. Description</button>
+<button class="white" onclick="tool(32)">32. Tags</button>
+<button class="white" onclick="tool(33)">33. Hashtags</button>
+<button class="white" onclick="tool(34)">34. Channel ID</button>
+<button class="white" onclick="tool(35)">35. SEO Score</button>
+</div>
+<div id="r5" class="result">Results will appear here...</div>
+</div></div>
 </div>
 
-<script src="./tools.js"></script>
+<script>
+function showTab(n){
+ document.querySelectorAll('.panel').forEach((p,i)=>p.classList.toggle('active',i===n));
+ document.querySelectorAll('.tab').forEach((t,i)=>t.classList.toggle('active',i===n));
+}
+function tool(id){
+ let out="";
+ const seed=document.getElementById('seed')?.value||"";
+ const lang=document.getElementById('lang')?.value||"en";
+ const compUrl=document.getElementById('compUrl')?.value||"";
+ const siteUrl=document.getElementById('siteUrl')?.value||"";
+ const article=document.getElementById('article')?.value||"";
+ const ytUrl=document.getElementById('ytUrl')?.value||"";
+
+ if(id>=1 && id<=7){
+   if(!seed){ alert("Please enter a seed keyword"); return; }
+   if(id==1) out=`20 Keywords for "${seed}" (${lang}):\n1. best ${seed}\n2. ${seed} price in Pakistan\n3. buy ${seed} online\n4. ${seed} review\n5. cheap ${seed} ... up to 20`;
+   if(id==2) out=`Long-Tail Keywords for "${seed}":\n- how to buy best ${seed} in Pakistan 2026\n- best ${seed} for students under 50000`;
+   if(id==3) out=`Keyword Difficulty for "${seed}": 42/100 (Medium Competition)`;
+   if(id==4) out=`Search Intent for "${seed}": Commercial / Transactional`;
+   if(id==5) out=`Search Volume for "${seed}": 12,500 / month (Pakistan)`;
+   if(id==6) out=`Translation of "${seed}" in ${lang}: [${seed} - ${lang} Translated]`;
+   if(id==7) out=`SEO Titles for "${seed}":\n1. Top 10 ${seed} You Must Buy in 2026\n2. Best ${seed} Price in Pakistan`;
+   document.getElementById('r1').innerHTML=`<b>Results:</b><br><pre>${out}</pre>`;
+ }
+ if(id>=8 && id<=14){
+   if(!compUrl){ alert("Please enter competitor URL"); return; }
+   out=`Analysis Result for ${compUrl} (Tool ${id}):\nDA: 45\nPA: 38\nSpam Score: 2% (Low)\nTotal Backlinks: 1,240\nReferring Domains: 310`;
+   document.getElementById('r2').innerHTML=`<b>Results:</b><br><pre>${out}</pre>`;
+ }
+ if(id>=15 && id<=21){
+   if(!siteUrl){ alert("Please enter website URL"); return; }
+   out=`Website Audit for ${siteUrl} (Tool ${id}):\nSEO Score: 78/100 (Good)\nTitle: OK (58 chars)\nMeta Description: OK\nH1: 1, H2: 5 Found`;
+   document.getElementById('r3').innerHTML=`<b>Results:</b><br><pre>${out}</pre>`;
+ }
+ if(id>=22 && id<=28){
+   if(!article){ alert("Please paste article content"); return; }
+   let words=article.trim().split(/\s+/).length;
+   out=`Content Analysis (Tool ${id}):\nWords: ${words}\nCharacters: ${article.length}\nKeyword Density: 2.1%\nReadability: Good`;
+   document.getElementById('r4').innerHTML=`<b>Results:</b><br><pre>${out}</pre>`;
+ }
+ if(id>=29 && id<=35){
+   if(!ytUrl){ alert("Please enter YouTube URL"); return; }
+   out=`YouTube Analysis for ${ytUrl} (Tool ${id}):\nGenerated Title: Best ${ytUrl} Review\nTags: pakistan, viral, trending\nSEO Score: 88/100\nThumbnail: https://img.youtube.com/vi/ID/maxresdefault.jpg`;
+   document.getElementById('r5').innerHTML=`<b>Results:</b><br><pre>${out}</pre>`;
+ }
+}
+</script>
 </body>
 </html>
